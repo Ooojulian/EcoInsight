@@ -1,0 +1,17 @@
+# Ignorar entorno virtual (pesa mucho y es innecesario)
+venv/
+env/
+
+# Ignorar archivos compilados de Python
+__pycache__/
+*.py[cod]
+
+# Ignorar archivos de sistema o IDE
+.vscode/
+.idea/
+.DS_Store
+
+# (Opcional) Si tu modelo pesa más de 100MB, GitHub no dejará subirlo.
+# Si pesa menos, puedes dejarlo comentado para que se suba.
+# *.keras
+# *.pkl
