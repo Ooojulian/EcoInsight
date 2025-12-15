@@ -25,5 +25,5 @@ https://colab.research.google.com/drive/1X8b14ZxM0p9URIqt5tTvGdOwTbQcEfId?usp=sh
 
 ### 1. Clonar el repositorio
 ```bash
-git clone [https://github.com/TU_USUARIO/EcoInsight.git](https://github.com/Ooojulian/EcoInsight.git)
+git clone (https://github.com/Ooojulian/EcoInsight.git)
 cd EcoInsight
