@@ -10,6 +10,10 @@ EcoInsight es un sistema *End-to-End* de Ingeniería de Datos e Inteligencia Art
 
 El sistema utiliza una arquitectura de **Red Neuronal Recurrente (LSTM)** entrenada con datos históricos (2017-2025), implementando ingeniería de características cíclicas (Trigonometría temporal) y vectores de viento.
 
+## Colab(Entrenamiento)
+
+https://colab.research.google.com/drive/1X8b14ZxM0p9URIqt5tTvGdOwTbQcEfId?usp=sharing
+
 ## 🚀 Arquitectura del Proyecto
 
 1.  **ETL Pipeline:** Procesamiento de +160 archivos Excel (RMCAB), limpieza dinámica e imputación de datos faltantes con **MICE (Iterative Imputer)**.
@@ -21,5 +25,5 @@ El sistema utiliza una arquitectura de **Red Neuronal Recurrente (LSTM)** entren
 
 ### 1. Clonar el repositorio
 ```bash
-git clone [https://github.com/TU_USUARIO/EcoInsight.git](https://github.com/TU_USUARIO/EcoInsight.git)
+git clone (https://github.com/Ooojulian/EcoInsight.git)
 cd EcoInsight
