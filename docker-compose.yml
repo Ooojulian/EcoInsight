@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  # Servicio 1: El Cerebro (API)
+  backend:
+    build: .
+    container_name: ecoinsight_api
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app  # Hot-reload: Si cambias código en tu PC, cambia en Docker
+
+  # Servicio 2: La Cara (Dashboard)
+  frontend:
+    build: .
+    container_name: ecoinsight_dashboard
+    command: streamlit run app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    depends_on:
+      - backend  # Espera a que la API exista antes de iniciar
+    # Truco: Le decimos al Streamlit de Docker dónde encontrar a la API de Docker
+    environment:
+      - API_URL=http://backend:8000/predict
